@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatiha Halal Dining</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style font name  -->
+    <style>
+      .header-font {
+        font-family: "Cinzel", serif;
+      }
+      .description-font {
+        font-family: "Inter", serif;
+      }
+    </style>
+    <!-- daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- tailwind script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "nav-color": "#D99904",
+              "description-color": "rgba(19,19,24,0.6)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="description-font">
+    <header class="">
+      <!-- lg nav -->
+      <!-- carousel -->
+      <div class="carousel w-full">
+        <!-- item-1 -->
+        <div
+          id="item1"
+          class="carousel-item w-full sm:h-screen bg-no-repeat bg-cover sm:bg-cover md:bg-contain xl:bg-cover h-60"
+          style="background-image: url(assets/home/02.jpg);
+          "
+        >
+          <!-- Phone Nav -->
+
+          <div class="container mx-auto navbar-start lg:hidden text-nav-color">
+            <div class="flex justify-between items-center">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor "
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+              <div
+                class="header-font font-bold text-xl sm:text-2xl md:text-3xl pr-4"
+              >
+                Fatiha Halal Dine
+              </div>
+            </div>
+          </div>
+          <!-- nav container -->       
+          <div
+            class="hidden lg:flex justify-between text-nav-color container mx-auto py-8 px-3.5 sm:px-6 lg:px-12"
+          >
+          <div class="dropdown hidden lg:block xl:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+            <!-- nav left -->
+            <div>
+              <h1 class="header-font text-3xl font-extrabold">
+                Fatiha Halal Dine
+              </h1>
+            </div>
+            <!-- nav right -->
+            <div>
+              <ul class="gap-5 flex ">
+                <li><a class="hidden xl:flex" href="">Home </a></li>
+                <li><a class="hidden xl:flex" href="">Our Menu </a></li>
+                <li><a class="hidden xl:flex" href="">Our Shop </a></li>
+                <li><a class="hidden xl:flex" href="">Dashboard </a></li>
+                <li><a class="hidden xl:flex" href="">Contact US</a></li>
+                <img
+                  src="assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png"
+                  class="w-10"
+                  alt=""
+                />
+                <li class="font-extrabold text-[#EEFF25]">
+                  <a href="">Sign Out </a>
+                </li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7 text-[#EEFF25]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- item2 -->
+        <div
+          id="item2"
+          class="carousel-item w-full sm:h-screen bg-no-repeat bg-cover sm:bg-cover md:bg-contain xl:bg-cover h-60"
+          style="background-image: url(assets/home/04.jpg);
+          "
+        >
+          <!-- Phone Nav -->
+
+          <div class="container mx-auto navbar-start lg:hidden text-nav-color">
+            <div class="flex justify-between items-center">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor "
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+              <div
+                class="header-font font-bold text-xl sm:text-2xl md:text-3xl pr-4"
+              >
+                Fatiha Halal Dine
+              </div>
+            </div>
+          </div>
+          <!-- nav container -->       
+          <div
+            class="hidden lg:flex justify-between text-nav-color container mx-auto py-8 px-3.5 sm:px-6 lg:px-12"
+          >
+          <div class="dropdown hidden lg:block xl:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+            <!-- nav left -->
+            <div>
+              <h1 class="header-font text-3xl font-extrabold">
+                Fatiha Halal Dine
+              </h1>
+            </div>
+            <!-- nav right -->
+            <div>
+              <ul class="gap-5 flex ">
+                <li><a class="hidden xl:flex" href="">Home </a></li>
+                <li><a class="hidden xl:flex" href="">Our Menu </a></li>
+                <li><a class="hidden xl:flex" href="">Our Shop </a></li>
+                <li><a class="hidden xl:flex" href="">Dashboard </a></li>
+                <li><a class="hidden xl:flex" href="">Contact US</a></li>
+                <img
+                  src="assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png"
+                  class="w-10"
+                  alt=""
+                />
+                <li class="font-extrabold text-[#EEFF25]">
+                  <a href="">Sign Out </a>
+                </li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7 text-[#EEFF25]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- item3 -->
+        <div
+          id="item3"
+          class="carousel-item w-full sm:h-screen bg-no-repeat bg-cover sm:bg-cover md:bg-contain xl:bg-cover h-60"
+          style="background-image: url(assets/home/03.png);
+          "
+        >
+          <!-- Phone Nav -->
+
+          <div class="container mx-auto navbar-start lg:hidden text-nav-color">
+            <div class="flex justify-between items-center">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor "
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+              <div
+                class="header-font font-bold text-xl sm:text-2xl md:text-3xl pr-4"
+              >
+                Fatiha Halal Dine
+              </div>
+            </div>
+          </div>
+          <!-- nav container -->       
+          <div
+            class="hidden lg:flex justify-between text-nav-color container mx-auto py-8 px-3.5 sm:px-6 lg:px-12"
+          >
+          <div class="dropdown hidden lg:block xl:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+            <!-- nav left -->
+            <div>
+              <h1 class="header-font text-3xl font-extrabold">
+                Fatiha Halal Dine
+              </h1>
+            </div>
+            <!-- nav right -->
+            <div>
+              <ul class="gap-5 flex ">
+                <li><a class="hidden xl:flex" href="">Home </a></li>
+                <li><a class="hidden xl:flex" href="">Our Menu </a></li>
+                <li><a class="hidden xl:flex" href="">Our Shop </a></li>
+                <li><a class="hidden xl:flex" href="">Dashboard </a></li>
+                <li><a class="hidden xl:flex" href="">Contact US</a></li>
+                <img
+                  src="assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png"
+                  class="w-10"
+                  alt=""
+                />
+                <li class="font-extrabold text-[#EEFF25]">
+                  <a href="">Sign Out </a>
+                </li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7 text-[#EEFF25]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- item4 -->
+        <div
+        id="item4"
+        class="carousel-item w-full sm:h-screen bg-no-repeat bg-cover sm:bg-cover md:bg-contain xl:bg-cover h-60"
+        style="background-image: url(assets/home/01.jpg);
+        "
+      >
+        <!-- Phone Nav -->
+
+        <div class="container mx-auto navbar-start lg:hidden text-nav-color">
+          <div class="flex justify-between items-center">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor "
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+            <div
+              class="header-font font-bold text-xl sm:text-2xl md:text-3xl pr-4"
+            >
+              Fatiha Halal Dine
+            </div>
+          </div>
+        </div>
+        <!-- nav container -->       
+        <div
+          class="hidden lg:flex justify-between text-nav-color container mx-auto py-8 px-3.5 sm:px-6 lg:px-12"
+        >
+        <div class="dropdown hidden lg:block xl:hidden">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor "
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Homepage</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+          <!-- nav left -->
+          <div>
+            <h1 class="header-font text-3xl font-extrabold">
+              Fatiha Halal Dine
+            </h1>
+          </div>
+          <!-- nav right -->
+          <div>
+            <ul class="gap-5 flex ">
+              <li><a class="hidden xl:flex" href="">Home </a></li>
+              <li><a class="hidden xl:flex" href="">Our Menu </a></li>
+              <li><a class="hidden xl:flex" href="">Our Shop </a></li>
+              <li><a class="hidden xl:flex" href="">Dashboard </a></li>
+              <li><a class="hidden xl:flex" href="">Contact US</a></li>
+              <img
+                src="assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png"
+                class="w-10"
+                alt=""
+              />
+              <li class="font-extrabold text-[#EEFF25]">
+                <a href="">Sign Out </a>
+              </li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-7 text-[#EEFF25]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- item5 -->
+      <div
+      id="item5"
+      class="carousel-item w-full sm:h-screen bg-no-repeat bg-cover sm:bg-cover md:bg-contain xl:bg-cover h-60"
+      style="background-image: url(assets/home/05.png);
+      "
+    >
+      <!-- Phone Nav -->
+
+      <div class="container mx-auto navbar-start lg:hidden text-nav-color">
+        <div class="flex justify-between items-center">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+          <div
+            class="header-font font-bold text-xl sm:text-2xl md:text-3xl pr-4"
+          >
+            Fatiha Halal Dine
+          </div>
+        </div>
+      </div>
+      <!-- nav container -->       
+      <div
+        class="hidden lg:flex justify-between text-nav-color container mx-auto py-8 px-3.5 sm:px-6 lg:px-12"
+      >
+      <div class="dropdown hidden lg:block xl:hidden">
+        <div
+          tabindex="0"
+          role="button"
+          class="btn btn-ghost btn-circle"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor "
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        >
+          <li><a>Homepage</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+        <!-- nav left -->
+        <div>
+          <h1 class="header-font text-3xl font-extrabold">
+            Fatiha Halal Dine
+          </h1>
+        </div>
+        <!-- nav right -->
+        <div>
+          <ul class="gap-5 flex ">
+            <li><a class="hidden xl:flex" href="">Home </a></li>
+            <li><a class="hidden xl:flex" href="">Our Menu </a></li>
+            <li><a class="hidden xl:flex" href="">Our Shop </a></li>
+            <li><a class="hidden xl:flex" href="">Dashboard </a></li>
+            <li><a class="hidden xl:flex" href="">Contact US</a></li>
+            <img
+              src="assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png"
+              class="w-10"
+              alt=""
+            />
+            <li class="font-extrabold text-[#EEFF25]">
+              <a href="">Sign Out </a>
+            </li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7 text-[#EEFF25]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- item6 -->
+    <div
+    id="item6"
+    class="carousel-item w-full sm:h-screen bg-no-repeat bg-cover sm:bg-cover md:bg-contain xl:bg-cover h-60"
+    style="background-image: url(assets/home/06.png);
+    "
+  >
+    <!-- Phone Nav -->
+
+    <div class="container mx-auto navbar-start lg:hidden text-nav-color">
+      <div class="flex justify-between items-center">
+        <div class="dropdown">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor "
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Homepage</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+        <div
+          class="header-font font-bold text-xl sm:text-2xl md:text-3xl pr-4"
+        >
+          Fatiha Halal Dine
+        </div>
+      </div>
+    </div>
+    <!-- nav container -->       
+    <div
+      class="hidden lg:flex justify-between text-nav-color container mx-auto py-8 px-3.5 sm:px-6 lg:px-12"
+    >
+    <div class="dropdown hidden lg:block xl:hidden">
+      <div
+        tabindex="0"
+        role="button"
+        class="btn btn-ghost btn-circle"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class=" h-8 w-14 sm:h-10 sm:w-16 md:h-12 md:w-20"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor "
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h7"
+          />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+      >
+        <li><a>Homepage</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+      <!-- nav left -->
+      <div>
+        <h1 class="header-font text-3xl font-extrabold">
+          Fatiha Halal Dine
+        </h1>
+      </div>
+      <!-- nav right -->
+      <div>
+        <ul class="gap-5 flex ">
+          <li><a class="hidden xl:flex" href="">Home </a></li>
+          <li><a class="hidden xl:flex" href="">Our Menu </a></li>
+          <li><a class="hidden xl:flex" href="">Our Shop </a></li>
+          <li><a class="hidden xl:flex" href="">Dashboard </a></li>
+          <li><a class="hidden xl:flex" href="">Contact US</a></li>
+          <img
+            src="assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png"
+            class="w-10"
+            alt=""
+          />
+          <li class="font-extrabold text-[#EEFF25]">
+            <a href="">Sign Out </a>
+          </li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-7 text-[#EEFF25]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </ul>
+      </div>
+    </div>
+  </div>
+      </div>
+      <!-- bottom-btn -->
+      <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+        <a href="#item4" class="btn btn-xs">4</a>
+        <a href="#item5" class="btn btn-xs">5</a>
+        <a href="#item6" class="btn btn-xs">6</a>
+      </div>
+      <!--  -->
+    </header>
+  </body>
+</html>
